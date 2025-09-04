@@ -1,5 +1,5 @@
 #impotação
-import json
+'''import json
 try:
     arquivo= input('Digitr o nome do arquivo:').strip().lower()
 
@@ -12,4 +12,4 @@ try:
                 print(f'{chave.captalize()} : {dado.get(chave)}')
             print('-'*40)
 except Exception as e:
-     print(f'Não foi possível ler o arquivo. {e}')
+     print(f'Não foi possível ler o arquivo. {e}')'''

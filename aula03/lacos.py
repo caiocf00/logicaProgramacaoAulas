@@ -94,7 +94,7 @@ if opcao == 's':
 else: opcao == 'n'
     print("Saindo do sistema!")
     break'''
-
+'''
 print(30*"-",'Cadastro',30*"-")
 nome = input("Digite seu nome: ")
 cpf = input("Digite seu CPF: ")
@@ -181,3 +181,91 @@ while True:
         break
     else:
         print("Opção inválida!")
+'''
+'''
+# Lista de salas com filmes e suas classificações
+salas = {
+    1: {"filme": "Divertida Mente 2", "idade_minima": 0},
+    2: {"filme": "Deadpool & Wolverine", "idade_minima": 16},
+    3: {"filme": "Annabelle", "idade_minima": 18},
+    4: {"filme": "Homem-Aranha: Sem Volta Para Casa", "idade_minima": 12},
+    5: {"filme": "Minions 2", "idade_minima": 0}
+}
+
+print("Bem-vindo ao cinema!\n")
+
+# Usuário informa a idade
+idade = int(input("Digite sua idade: "))
+
+while True:
+    print("\n--- Lista de Filmes ---")
+    for sala, info in salas.items():
+        print(f"Sala {sala} - {info['filme']} (Classificação: {info['idade_minima']} anos)")
+
+    escolha = int(input("\nDigite o número da sala que deseja assistir: "))
+
+    # Verifica se a sala existe
+    if escolha in salas:
+        filme = salas[escolha]["filme"]
+        idade_min = salas[escolha]["idade_minima"]
+
+        if idade >= idade_min:
+            print(f"\n✅ Ingresso gerado! Bom filme: {filme} 🎬")
+            break
+        else:
+            print(f"\n❌ Você não tem idade para assistir {filme}. Escolha outro filme.")
+    else:
+        print("\nSala inválida. Tente novamente.")'''
+'''
+print("Bem-vindo ao cinema!\n")
+
+# Usuário informa a idade
+idade = int(input("Digite sua idade: "))
+
+while True:
+    print("\n--- Lista de Filmes ---")
+    print("1 - Divertida Mente 2 (Livre)")
+    print("2 - Deadpool & Wolverine (16 anos)")
+    print("3 - Annabelle (18 anos)")
+    print("4 - Homem-Aranha: Sem Volta Para Casa (12 anos)")
+    print("5 - Minions 2 (Livre)")
+
+    escolha = int(input("\nDigite o número da sala que deseja assistir: "))
+
+    if escolha == 1:
+        if idade >= 0:
+            print("✅ Ingresso gerado! Bom filme: Divertida Mente 2 🎬")
+            break
+        else:
+            print("❌ Você não tem idade para esse filme.")
+
+    elif escolha == 2:
+        if idade >= 16:
+            print("✅ Ingresso gerado! Bom filme: Deadpool & Wolverine 🎬")
+            break
+        else:
+            print("❌ Você não tem idade para esse filme.")
+
+    elif escolha == 3:
+        if idade >= 18:
+            print("✅ Ingresso gerado! Bom filme: Annabelle 🎬")
+            break
+        else:
+            print("❌ Você não tem idade para esse filme.")
+
+    elif escolha == 4:
+        if idade >= 12:
+            print("✅ Ingresso gerado! Bom filme: Homem-Aranha 🎬")
+            break
+        else:
+            print("❌ Você não tem idade para esse filme.")
+
+    elif escolha == 5:
+        if idade >= 0:
+            print("✅ Ingresso gerado! Bom filme: Minions 2 🎬")
+            break
+        else:
+            print("❌ Você não tem idade para esse filme.")
+
+    else:
+        print("Opção inválida, tente novamente.")'''
